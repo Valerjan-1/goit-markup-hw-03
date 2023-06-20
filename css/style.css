@@ -4,13 +4,29 @@ body {
   color: #434455;
   font-weight: 400;
 }
-.link {
-  text-decoration: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
-.list {
+ol,
+ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+img {
+  display: block;
+}
 :root {
   --bg-color: #ffffff;
 }
@@ -26,8 +42,38 @@ body {
 :root {
   --font-weight: 500;
 }
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header {
+  padding-top: 29px;
+  padding-bottom: 29px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+.header-contacts {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+}
 .link-logo {
   color: var(--color-logo-link);
+  margin-right: 77px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -56,6 +102,7 @@ body {
 .contacts {
   font-style: normal;
 }
+
 .list-contacts {
   color: var(--color-text-paragraph);
   font-size: 16px;
@@ -76,6 +123,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  padding: 16px 32px;
+  border-radius: 4px;
 }
 .main-btn:hover,
 .main-btn:focus {
@@ -83,13 +132,36 @@ body {
 }
 .head-bg-color {
   background-color: var(--color-text-header);
+  width: 100%;
+  text-align: center;
 }
 .head-text {
+  display: flex;
+  justify-content: center;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--bg-color);
+  margin-bottom: 48px;
+}
+.head-content {
+  padding: 188px 0;
+}
+.section {
+  padding-top: 120px;
+}
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+}
+.benefits-item {
+  width: 264px;
+}
+.img-work {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
 }
 .btn {
   font-family: inherit;
@@ -119,6 +191,7 @@ body {
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 72px;
 }
 .projects {
   color: var(--color-text-header);
@@ -126,6 +199,7 @@ body {
   font-weight: var(--font-weight);
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 15px;
 }
 .categories {
   color: var(--color-text-paragraph);
@@ -133,16 +207,27 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 .team {
   background-color: #f4f4fd;
+  width: 100%;
 }
-.team-foto {
-  background-color: #ffffff;
+.our-team {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 120px;
 }
+.content-footer {
+  width: 264px;
+}
+
 .bg-footer {
   background-color: var(--color-text-header);
+  padding: 120px 0;
 }
 .text-footer {
+  padding-top: 16px;
   font-size: 16px;
   line-height: 1.5;
   color: #f4f4fd;

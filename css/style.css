@@ -45,6 +45,9 @@ button {
 :root {
   --font-weight: 500;
 }
+:root {
+  --color-btn-border-link: #e7e9fc;
+}
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -184,17 +187,19 @@ button {
   color: var(--color-logo-link);
   text-align: center;
   letter-spacing: 0.04em;
+  border: 1px solid #e7e9fc;
   border-radius: 4px;
   padding: 12px 24px;
 }
 
 .btn:hover,
 .btn:focus {
+  border: 1px solid transparent;
   background: #404bbf;
   color: #ffffff;
 }
 .visually-hidden {
-  display: none;
+  visibility: hidden;
 }
 .section-name {
   color: var(--color-text-header);
@@ -257,7 +262,6 @@ button {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-top: 67px;
   margin-bottom: 72px;
 }
 .list-works {
@@ -293,4 +297,7 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+.section-portfolio {
+  padding: 96px 0 120px 0;
 }

@@ -194,7 +194,7 @@ button {
   color: #ffffff;
 }
 .visually-hidden {
-  visibility: hidden;
+  display: none;
 }
 .section-name {
   color: var(--color-text-header);
@@ -238,20 +238,17 @@ button {
 .name-job {
   padding: 32px 16px;
 }
-.content-footer {
-  width: 264px;
-}
 
 .bg-footer {
   background-color: var(--color-text-header);
-  padding: 120px 0;
+  padding: 100px 0;
 }
 .text-footer {
-  padding-top: 16px;
   font-size: 16px;
   line-height: 1.5;
   color: #f4f4fd;
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
 .color-logo-footer {
   color: #f4f4fd;
@@ -284,4 +281,16 @@ button {
 }
 .card-content {
   margin: 32px 0 32px 17px;
+}
+.link-logo-footer {
+  display: inline-block;
+  color: var(--color-logo-link);
+  margin-bottom: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }

@@ -122,6 +122,10 @@ button {
 }
 
 .main-btn {
+  display: block;
+  min-width: 169px;
+  border: none;
+  margin: 0 auto;
   color: var(--bg-color);
   background: #4d5ae5;
   cursor: pointer;
@@ -141,20 +145,18 @@ button {
   background-color: var(--color-text-header);
   width: 100%;
   text-align: center;
+  padding: 188px 0;
 }
 .head-text {
-  display: flex;
-  justify-content: center;
+  max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--bg-color);
-  margin-bottom: 48px;
+  margin: 0 auto 48px auto;
 }
-.head-content {
-  padding: 188px 0;
-}
+
 .section {
   padding-top: 120px;
 }

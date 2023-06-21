@@ -158,14 +158,14 @@ button {
 }
 
 .section {
-  padding-top: 120px;
+  padding: 120px 0;
 }
 .benefits-list {
   display: flex;
-  justify-content: space-between;
+  gap: 24px;
 }
 .benefits-item {
-  width: 264px;
+  width: calc((100% - 72px) / 4);
 }
 .img-work {
   display: flex;
@@ -191,7 +191,7 @@ button {
   background: #404bbf;
   color: #ffffff;
 }
-.header-hidden {
+.visually-hidden {
   visibility: hidden;
 }
 .section-name {
@@ -210,7 +210,7 @@ button {
   font-weight: var(--font-weight);
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 .categories {
   color: var(--color-text-paragraph);
